@@ -31,18 +31,18 @@
 	margin-bottom: 50px;
 }
 
-.kamerleden{
-	display: inline-block;
-	background: blue;
-}
-
-.sectionTitle{
+.titleFoto, .titleLogo{
 	text-align: center;
+	display: inline-block;
+}
+.titleFoto{
+	background: blue;
+	width: 600px;
 }
 
-.logoSectieCda{
-	display: inline-block;
+.titleLogo{
 	background: orange;
+	width: 400px;
 }
 
 footer{
