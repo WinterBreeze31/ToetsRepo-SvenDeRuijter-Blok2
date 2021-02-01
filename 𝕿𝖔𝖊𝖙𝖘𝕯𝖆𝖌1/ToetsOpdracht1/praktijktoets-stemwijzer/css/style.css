@@ -62,6 +62,8 @@ footer{
 	padding: 10px;
 }
 
+
+
 .gridContainerIndex{
 	display: grid;
 	grid-template-columns: 700px 300px;
@@ -93,7 +95,8 @@ footer{
 	grid-column-start: 2;
   	grid-column-end: span 2;
   	grid-row-start: 5;
-  	grid-row-end: span 5;}
+  	grid-row-end: span 5;
+}
 
 .cdaSectie{
 	display: grid;
@@ -136,7 +139,7 @@ footer{
 	grid-row: 2;
 }
 
-.gridContainerIndex{
+.gridContainerVvd{
 	display: grid;
 	grid-template-columns: 400px 200px 400px;
 	grid-template-rows: 405px 400px;
