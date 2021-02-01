@@ -4,7 +4,7 @@
 }
 
 .container{
-	width: 1010px;
+	width: 1005px;
 }
 
 #headerAfbeelding{
@@ -23,20 +23,26 @@
 	text-align: center;
 }
 
-#cdaLogo, #d66Logo{
-	
-}
-
-#vvdLogo, #pvdaLogo{
-	
-}
-
 #pvdaLogo{
 	margin-bottom: 130px;
 }
 
 #vvdLogo{
 	margin-bottom: 50px;
+}
+
+.kamerleden{
+	display: inline-block;
+	background: blue;
+}
+
+.sectionTitle{
+	text-align: center;
+}
+
+.logoSectieCda{
+	display: inline-block;
+	background: orange;
 }
 
 footer{
