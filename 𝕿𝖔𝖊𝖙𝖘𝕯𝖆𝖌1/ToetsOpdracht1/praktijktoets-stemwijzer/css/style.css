@@ -2,18 +2,38 @@
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: grey;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+br{
+	line-height: 50px;
 }
 
 li{
 	display: inline-block;
-	background: orange;
+	background:  #d3721d;
 	padding: 5px 10px 5px 10px;
 	margin-right: 30px;
 	margin-left: 30px;
 }
 
+li:hover{
+	background: white;
+}
+
 .container{
 	width: 1000px;
+	margin: 0 auto;
+	background: whitesmoke;
 }
 
 #headerAfbeelding{
@@ -22,7 +42,7 @@ li{
 
 
 .homeNavbar{
-	background: blue;
+	background:  #36b2d8;
 	text-align: center;
 }
 
@@ -37,19 +57,20 @@ li{
 .titleFoto, .titleLogo{
 	text-align: center;
 	display: inline-block;
+	font-family: 'Noto Sans', sans-serif;
 }
 .titleFoto{
-	background: blue;
+	background: #36b2d8;
 	width: 600px;
 }
 
 .titleLogo{
-	background: orange;
+	background:  #d3721d;
 	width: 400px;
 }
 
 footer{
-	background: blue;
+	background: #36b2d8;
 	text-align: center;
 	font-size: 20px;
 }
