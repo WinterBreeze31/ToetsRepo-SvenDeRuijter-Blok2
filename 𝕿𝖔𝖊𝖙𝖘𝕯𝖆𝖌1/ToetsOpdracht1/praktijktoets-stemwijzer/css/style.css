@@ -1,6 +1,15 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-size: 14px;
+}
+
+li{
+	display: inline-block;
+	background: orange;
+	padding: 5px 10px 5px 10px;
+	margin-right: 30px;
+	margin-left: 30px;
 }
 
 .container{
@@ -11,12 +20,6 @@
 	width: 100%;
 }
 
-.navButton{
-	background: orange;
-	margin-right: 30px;
-	margin-left: 30px;
-	padding: 10px;
-}
 
 .homeNavbar{
 	background: blue;
