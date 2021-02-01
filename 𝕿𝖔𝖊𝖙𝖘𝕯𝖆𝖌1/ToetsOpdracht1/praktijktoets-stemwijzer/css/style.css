@@ -46,27 +46,13 @@ li:hover{
 	text-align: center;
 }
 
-#pvdaLogo{
-	margin-bottom: 130px;
-}
-
-#vvdLogo{
-	margin-bottom: 50px;
-}
-
 .titleFoto, .titleLogo{
 	text-align: center;
 	display: inline-block;
 	font-family: 'Noto Sans', sans-serif;
-}
-.titleFoto{
-	background: #36b2d8;
-	width: 600px;
-}
-
-.titleLogo{
-	background:  #d3721d;
-	width: 400px;
+	height: 20px;
+	grid-row-start: 1;
+  	grid-row-end: span 1;
 }
 
 footer{
@@ -108,4 +94,45 @@ footer{
   	grid-column-end: span 2;
   	grid-row-start: 5;
   	grid-row-end: span 5;
+}
+
+.cdaSectie{
+	display: grid;
+	grid-template-columns: 200px 200px 200px 400px;
+	grid-template-rows:	20px 200px;
+}
+
+.titleFoto{
+	background: #36b2d8;
+	width: 600px;
+	grid-column-start: 1;
+  	grid-column-end: span 3;
+}
+
+.titleLogo{
+	grid-column-start: 4;
+  	grid-column-end: span 4;
+	background:  #d3721d;
+	width: 400px;
+}
+
+#sybrandImg, #agnesImg, #harryImg{
+	grid-row: 2;
+}
+
+#sybrandImg{
+	grid-column: 1;
+}
+
+#agnesImg{
+	grid-column: 2;
+}
+
+#harryImg{
+	grid-column: 3;
+}
+
+#cdaLogo{
+	grid-column: 4;
+	grid-row: 2;
 }
