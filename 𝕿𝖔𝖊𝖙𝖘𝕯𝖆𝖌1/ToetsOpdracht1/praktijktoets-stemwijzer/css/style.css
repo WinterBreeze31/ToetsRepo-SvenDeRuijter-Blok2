@@ -72,5 +72,40 @@ li:hover{
 footer{
 	background: #36b2d8;
 	text-align: center;
-	font-size: 20px;
+	font-size: 14px;
+	padding: 10px;
+}
+
+.gridContainerIndex{
+	display: grid;
+	grid-template-columns: 700px 300px;
+	grid-template-rows: 50px 300px 50px 156px 88px 156px;
+}
+
+#cdaLogo{
+	grid-column-start: 1;
+  	grid-column-end: span 1;
+  	grid-row-start: 1;
+  	grid-row-end: span 3;
+}
+
+#vvdLogo{
+	grid-column-start: 2;
+  	grid-column-end: span 2;
+  	grid-row-start: 2;
+  	grid-row-end: span 2;
+}
+
+#d66Logo{
+	grid-column-start: 1;
+  	grid-column-end: span 1;
+  	grid-row-start: 3;
+  	grid-row-end: span 6;
+}
+
+#pvdaLogo{
+	grid-column-start: 2;
+  	grid-column-end: span 2;
+  	grid-row-start: 5;
+  	grid-row-end: span 5;
 }
