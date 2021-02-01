@@ -1,0 +1,47 @@
+Functionele eisen:
+
+· De website is via de browser te bezoeken en komt overeen met het ontwerp
+
+· De klant kan over het menu heen gaan en de achtergrondkleur van de menu-items worden dan wit
+
+· De klant ziet in de footer wie de webpagina gemaakt heeft
+
+· De website is gecentreerd in de pagina
+
+· Elke pagina heeft voor elke webpagina een goede title.
+
+Technische eisen:
+
+· Je html en css valideren via https://validator.w3.org/#validate_by_upload
+
+· Je html en css zijn netjes uitgelijnd
+
+· Je maakt gebruik van alle kennis die je al hebt
+
+· De standaardteksten hebben als font Roboto met als lettergrootte 14px. Dit font is via google beschikbaar: https://fonts.google.com/specimen/Roboto
+
+· De kopjes hebben als font Noto Sans met als lettergrootte 24 px. Dit font is via google beschikbaar: https://fonts.google.com/specimen/Noto+Sans
+
+· Je maakt gebruik van een div om de gehele pagina te centreren, deze div is 1000px breed.
+
+· Je moet de website bouwen met behulp van de Grid Layout
+
+· Je mag maar 1 CSS gebruiken voor je gehele website en alle pagina’s werken met hetzelfde Grid Layout (je mag dus niet voor elke pagina een eigen grid layout maken)
+
+· Je mag voor deze opdracht ** GEEN ** gebruik maken van een negatieve margin / padding
+
+· De achtergrondkleur van de body is grijs
+
+Menu
+
+· Is gemaakt met behulp van een ongeordende lijst
+
+· Achtergrondkleur van het menu is: #36b2d8
+
+· De standaard achtergrondkleur van een menu-item is: #d3721d
+
+· De tekstkleur van een menu-item is: zwart
+
+· De achtergrondkleur van een menu-item bij een mouse-over is: wit
+
+· Onder het menu is een witte ruimte van 50px 

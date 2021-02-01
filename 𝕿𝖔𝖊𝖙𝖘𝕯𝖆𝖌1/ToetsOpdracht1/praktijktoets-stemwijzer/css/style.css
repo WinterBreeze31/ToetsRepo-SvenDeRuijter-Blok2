@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 50%;
+}
+
+#headerAfbeelding{
+	width: 100%;
+}
+
+.navButton{
+	background: orange;
+	margin-right: 10px;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.homeNavbar{
+	background: blue;
+}
