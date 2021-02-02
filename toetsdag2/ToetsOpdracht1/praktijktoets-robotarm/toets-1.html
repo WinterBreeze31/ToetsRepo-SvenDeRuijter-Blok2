@@ -23,11 +23,8 @@
 
 
 //begin
-            rechts(4);
-
-            robotArm.grab();
-            robotStarter(robotArm.scan());
-
+var block = 6
+           
 function robotStarter(kleur){
 
             if (kleur == "white"){
@@ -35,24 +32,25 @@ function robotStarter(kleur){
                 robotArm.drop();
                 rechts(4);
                 }
-
-            else if (kleur == 0){
-                links(4);
-                alert("Alles is klaar");
+            else if (kleur == "start"){
+                rechts(4);
             }
-
-            else {
-                rechts(5);
-                robotArm.drop();
-                links(5);}
-
-            if (kleur !== 0) {
-                robotArm.grab();
-                function new(){robotStarter(robotArm.scan())};}
-            }
-
-
             
+            else {
+                rechts(5)
+                robotArm.drop();
+                links(5)
+                }
+
+            robotArm.grab()
+        }
+
+        robotStarter("start")
+
+        for (var i = 0; i < block; i--) {
+            if (robotArm.scan() == 0){i = 0;};
+            else{ robotStarter(robotArm.scan())}
+   }
 
                
 
