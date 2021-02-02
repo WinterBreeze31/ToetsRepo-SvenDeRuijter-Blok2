@@ -24,29 +24,33 @@
 
 //begin
            
-function robotStarter(kleur){
 
+//hier maak ik de benodigde functie om te starten
+function robotStarter(kleur){
+//als de kleur wit is, gaat hij naar links
             if (kleur == "white"){
                 links(4);
                 robotArm.drop();
                 rechts(4);
                 }
-            
+//als deze niet wit is gaat hij naar rechts
             else {
                 rechts(5)
                 robotArm.drop();
                 links(5)
                 }
-
+//als laatste pakt hij de blok in het midden zodat hij klaar is voor de volgende loop
             robotArm.grab()
         }
-
+//hier zet ik de arm in positie en pak ik de blok in het midden zodat de arm klaar is voor de loop/scan
         rechts(4);
         robotArm.grab();
-
+//hier maak ik de loop
         for (var i = 0; i <= 8; i++) {
+//hier check ik of de robot scan null is en er dus geen blokken meer zijn. is dit het geval, stopt de loop.
             if (robotArm.scan() == null){
                 i = 8;}
+//is dit niet het geval, gaat de loop verder
             else{ robotStarter(robotArm.scan())}
    }
 
