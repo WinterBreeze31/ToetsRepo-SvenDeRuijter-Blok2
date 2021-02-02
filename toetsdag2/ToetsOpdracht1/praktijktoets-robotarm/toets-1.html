@@ -23,7 +23,6 @@
 
 
 //begin
-var block = 6
            
 function robotStarter(kleur){
 
@@ -32,9 +31,6 @@ function robotStarter(kleur){
                 robotArm.drop();
                 rechts(4);
                 }
-            else if (kleur == "start"){
-                rechts(4);
-            }
             
             else {
                 rechts(5)
@@ -45,10 +41,12 @@ function robotStarter(kleur){
             robotArm.grab()
         }
 
-        robotStarter("start")
+        rechts(4);
+        robotArm.grab();
 
-        for (var i = 0; i < block; i--) {
-            if (robotArm.scan() == 0){i = 0;};
+        for (var i = 0; i <= 8; i++) {
+            if (robotArm.scan() == null){
+                i = 8;}
             else{ robotStarter(robotArm.scan())}
    }
 
