@@ -1,6 +1,6 @@
-var eensButton = documet.getElementById('eensButton');
-var oneensButton = documet.getElementById('oneensButton');
+var eensButton = document.getElementById('eensButton');
+var oneensButton = document.getElementById('oneensButton');
 
 function test() {
-	if (oneensButton.checked) {alert("werkt")}
+	alert(eensButton.checked)
 }
