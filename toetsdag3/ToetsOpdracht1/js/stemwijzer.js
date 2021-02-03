@@ -2,10 +2,38 @@ var eensButton = document.getElementById('btnEens');
 var oneensButton = document.getElementById('btnOneens');
 var submitButton = document.getElementById('btnVolgende');
 var vraagzin = document.getElementById('stelling');
+var huidig = null
 var counter = 0;
 var eensCounter = 0;
-var oneensCounter = 0;
 
+
+eensButton.onclick = function(){pressed(1)};
+oneensButton.onclick = function(){pressed(2)};
+submitButton.onclick = function(){startTest()};
+
+
+function pressed(num){
+	if (num == 1) {
+		eensButton.style.background = "green";
+		oneensButton.style.background = "grey";
+		huidig = true;
+		submitButton.style.display = "inline"
+	}
+	else if (num == 2) {
+		eensButton.style.background = "grey";
+		oneensButton.style.background = "green";
+		huidig = false;
+		submitButton.style.display = "inline"
+	}
+	else {
+		eensButton.style.background = "grey";
+		oneensButton.style.background = "grey";
+		huidig = null;
+		submitButton.style.display = "none"
+	}
+}
+
+pressed(0)
 
 
 var vragenLijst = ["Nederland moet terug naar de Gulden",
@@ -23,26 +51,22 @@ vraagzin.innerHTML = vragenLijst[0];
 
 
 
-function startTest(testcount) {
-	if (eensButton.checked == true) {
-		eensCounter++;
-	}
-	else if (oneensButton.checked == true) {
-		oneensCounter++;
-	}
+function startTest() {
+	if (huidig == true) {
+		eensCounter++;}
 	else {
-		console.log("fout")
-	}
+		eensCounter++;
+		console.log("oneens")}
 
-	eensButton.checked = false;
-	oneensCounter.checked = false;
+	pressed(0)
 	
-	if (counter < 7){
+	if (counter >= 0){
+		vraagzin.innerHTML = vragenLijst[counter];
 		counter++
-		vraagzin.innerHTML = vragenLijst[testcount];
 	}
-	else if (counter == 7){
+	else if (counter >= 7){
 		submitButton.innerHTML = "voltooien";
+		vraagzin.innerHTML = vragenLijst[counter]
 		counter++;
 	}
 	else{
@@ -68,5 +92,5 @@ function finalScore(){
 		var partei = "cda"
 	}
 
-	vraagzin.innerHTML = "je hebt " + eensCounter + " keer op eens gestemt.<br>jouw partei is: " + partei;
+	vraagzin.innerHTML = "U heeft " + eensCounter + " keer EENS gestemd. De partij die het beste bij uw voorkeur past is " + partei + "."
 }
