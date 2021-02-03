@@ -1,7 +1,7 @@
-var eensButton = document.getElementById('eensButton');
-var oneensButton = document.getElementById('oneensButton');
-var submitButton = document.getElementById('submitButton');
-var vraagzin = document.getElementById('vraagzin');
+var eensButton = document.getElementById('btnEens');
+var oneensButton = document.getElementById('btnOneens');
+var submitButton = document.getElementById('btnVolgende');
+var vraagzin = document.getElementById('stelling');
 var counter = 0;
 var eensCounter = 0;
 var oneensCounter = 0;
@@ -33,6 +33,9 @@ function startTest(testcount) {
 	else {
 		console.log("fout")
 	}
+
+	eensButton.checked = false;
+	oneensCounter.checked = false;
 	
 	if (counter < 7){
 		counter++
@@ -51,5 +54,19 @@ function finalScore(){
 	eensButton.style.display = "none";
 	oneensButton.style.display = "none";
 	submitButton.style.display = "none";
-	vraagzin.innerHTML = "je hebt " + eensCounter + " keer op eens gestemt.<br>jouw partei is: "
+
+	if (eensCounter >= 8) {
+		var partei = "d66"
+	}
+	else if (eensCounter >= 5) {
+		var partei = "pvda"
+	}
+	else if (eensCounter >= 2) {
+		var partei = "vvd"
+	}
+	else {
+		var partei = "cda"
+	}
+
+	vraagzin.innerHTML = "je hebt " + eensCounter + " keer op eens gestemt.<br>jouw partei is: " + partei;
 }
