@@ -2,6 +2,7 @@ var eensButton = document.getElementById('btnEens');
 var oneensButton = document.getElementById('btnOneens');
 var submitButton = document.getElementById('btnVolgende');
 var vraagzin = document.getElementById('stelling');
+var buttonNav = document.getElementById('buttons');
 var huidig = null
 var counter = 0;
 var eensCounter = 0;
@@ -17,13 +18,13 @@ function pressed(num){
 		eensButton.style.background = "green";
 		oneensButton.style.background = "grey";
 		huidig = true;
-		submitButton.style.display = "inline"
+		submitButton.style.display = "inline-block"
 	}
 	else if (num == 2) {
 		eensButton.style.background = "grey";
 		oneensButton.style.background = "green";
 		huidig = false;
-		submitButton.style.display = "inline"
+		submitButton.style.display = "inline-block"
 	}
 	else {
 		eensButton.style.background = "grey";
@@ -73,6 +74,7 @@ function finalScore(){
 	eensButton.style.display = "none";
 	oneensButton.style.display = "none";
 	submitButton.style.display = "none";
+	vraagzin.style.display = "none";
 
 	if (eensCounter >= 8) {
 		var partei = "d66"
@@ -87,5 +89,12 @@ function finalScore(){
 		var partei = "cda"
 	}
 
-	vraagzin.innerHTML = "U heeft " + eensCounter + " keer EENS gestemd. De partij die het beste bij uw voorkeur past is " + partei + "."
+	var finalText = document.createElement("h1");
+	finalText.innerHTML = "U heeft " + eensCounter + " keer EENS gestemd. De partij die het beste bij uw voorkeur past is " + partei + "."
+
+	finalText.style.textAlign = "center";
+	finalText.style.fontWeight = "bold";
+	finalText.style.fontSize = "20px";
+
+	buttonNav.appendChild(finalText)
 }
