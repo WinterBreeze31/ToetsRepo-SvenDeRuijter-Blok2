@@ -1,0 +1,171 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: grey;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+br{
+	line-height: 50px;
+}
+
+li{
+	display: inline-block;
+	background:  #d3721d;
+	padding: 5px 10px 5px 10px;
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+li:hover{
+	background: white;
+}
+
+.container{
+	width: 1000px;
+	margin: 0 auto;
+	background: white;
+}
+
+#headerAfbeelding{
+	width: 100%;
+}
+
+
+.homeNavbar{
+	background:  #36b2d8;
+	text-align: center;
+}
+
+.titleFoto, .titleLogo{
+	text-align: center;
+	display: inline-block;
+	font-family: 'Noto Sans', sans-serif;
+	height: 20px;
+	grid-row-start: 1;
+  	grid-row-end: span 1;
+}
+
+footer{
+	background: #36b2d8;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+}
+
+
+
+.gridContainerIndex{
+	display: grid;
+	grid-template-columns: 700px 300px;
+	grid-template-rows: 50px 300px 50px 150px 80px 150px;
+}
+
+#cdaLogo2{
+	grid-column-start: 1;
+  	grid-column-end: span 1;
+  	grid-row-start: 1;
+  	grid-row-end: span 3;
+}
+
+#vvdLogo{
+	grid-column-start: 2;
+  	grid-column-end: span 2;
+  	grid-row-start: 2;
+  	grid-row-end: span 2;
+}
+
+#d66Logo{
+	grid-column-start: 1;
+  	grid-column-end: span 1;
+  	grid-row-start: 3;
+  	grid-row-end: span 6;
+}
+
+#pvdaLogo{
+	grid-column-start: 2;
+  	grid-column-end: span 2;
+  	grid-row-start: 5;
+  	grid-row-end: span 5;
+}
+
+.cdaSectie{
+	display: grid;
+	grid-template-columns: 200px 200px 200px 400px;
+	grid-template-rows:	20px 205px;
+}
+
+.titleFoto{
+	background: #36b2d8;
+	width: 600px;
+	grid-column-start: 1;
+  	grid-column-end: span 3;
+}
+
+.titleLogo{
+	grid-column-start: 4;
+  	grid-column-end: span 4;
+	background:  #d3721d;
+	width: 400px;
+}
+
+#sybrandImg, #agnesImg, #harryImg{
+	grid-row: 2;
+}
+
+#sybrandImg{
+	grid-column: 1;
+}
+
+#agnesImg{
+	grid-column: 2;
+}
+
+#harryImg{
+	grid-column: 3;
+}
+
+#cdaLogo{
+	grid-column: 4;
+	grid-row: 2;
+}
+
+.gridContainerVvd{
+	display: grid;
+	grid-template-columns: 400px 200px 400px;
+	grid-template-rows: 405px 400px;
+}
+
+#klaasImg, #janRemcoImg, #basImg{
+	grid-row: 1;
+}
+
+#sophieImg,#dilanJudithImg,#ockjeImg{
+	grid-row: 2;
+}
+
+#klaasImg,#sophieImg{
+	grid-column: 1;
+}
+
+#janRemcoImg,#dilanJudithImg{
+	grid-column: 2;
+}
+
+#basImg,#ockjeImg{
+	grid-column: 3;
+}
+
+
+
+
+
