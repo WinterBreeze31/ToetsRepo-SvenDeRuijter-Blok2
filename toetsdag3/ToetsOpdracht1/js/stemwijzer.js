@@ -47,29 +47,24 @@ var vragenLijst = ["Nederland moet terug naar de Gulden",
 					"nog een stelling van iets relevants"]
 
 
-vraagzin.innerHTML = vragenLijst[0];
-
-
-
 function startTest() {
 	if (huidig == true) {
 		eensCounter++;}
 	else {
-		eensCounter++;
 		console.log("oneens")}
 
 	pressed(0)
 	
-	if (counter >= 0){
-		vraagzin.innerHTML = vragenLijst[counter];
-		counter++
-	}
-	else if (counter >= 7){
-		submitButton.innerHTML = "voltooien";
-		vraagzin.innerHTML = vragenLijst[counter]
+	if (counter < 7){
 		counter++;
+		vraagzin.innerHTML = vragenLijst[counter];
 	}
-	else{
+	else if (counter == 7){
+		submitButton.innerHTML = "voltooien";
+		counter++;
+		vraagzin.innerHTML = vragenLijst[counter]
+	}
+	else if (counter > 7){
 		finalScore()
 	}
 }
